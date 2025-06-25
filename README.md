@@ -1,5 +1,5 @@
-# Toyota & 32Bit Spring Boot Backend Microservice Project
-This repository is a microservice project developed with spring boot that Toyota and 32bit companies want for their recruitment process.
+# CASHIER APP
+This project focuses on developing a grocery shopping system using Spring Boot, utilizing a microservices architecture.
 ## **Table of Contents**
 * [About the Project](#about-the-project)
 * [Used Technologies](#used-technologies)
