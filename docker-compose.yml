@@ -1,8 +1,6 @@
-version: '3.7'
-
 services:
   discovery-server:
-    image: discovery-server:latest
+    build: discovery-server
     container_name: discovery-server
     ports:
       - "8761:8761"
@@ -14,7 +12,7 @@ services:
       - micro-service-network
 
   api-gateway:
-    image: api-gateway:latest
+    build: api-gateway
     container_name: api-gateway
     ports:
       - "8080:8080"
@@ -30,7 +28,7 @@ services:
       - zipkin
 
   authentication-service:
-    image: authentication-service:latest
+    build: authentication-service
     container_name: authentication-service
     ports:
       - "8081:8081"
@@ -48,7 +46,7 @@ services:
       - micro-service-network
 
   product-service:
-    image: product-service:latest
+    build: product-service
     container_name: product-service
     ports:
       - "8082:8082"
@@ -64,7 +62,7 @@ services:
       - micro-service-network
 
   report-service:
-    image: report-service:latest
+    build: report-service
     container_name: report-service
     ports:
       - "8083:8083"
@@ -80,7 +78,7 @@ services:
       - micro-service-network
 
   sale-service:
-    image: sale-service:latest
+    build: sale-service
     container_name: sale-service
     ports:
       - "8084:8084"
@@ -96,7 +94,7 @@ services:
       - micro-service-network
 
   usermanagement-service:
-    image: usermanagement-service:latest
+    build: usermanagement-service
     container_name: usermanagement-service
     ports:
       - "8085:8085"
